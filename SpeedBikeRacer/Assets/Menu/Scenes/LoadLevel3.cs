@@ -5,6 +5,6 @@ public class LoadLevel3 : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-        Application.LoadLevel(5);
+        Application.LoadLevel(4);
 	}
 }

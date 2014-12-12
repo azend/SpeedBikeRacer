@@ -17,7 +17,7 @@ public class TextScroller : MonoBehaviour {
         
         myTimer += Time.deltaTime;
 
-        if (myTimer == 90)
+        if (myTimer > 90)
         {
             Application.LoadLevel(1);
         }
