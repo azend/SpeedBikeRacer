@@ -53,7 +53,6 @@
      <Compile Include="Assets\Level2\Water (Pro Only)\Water4\SpecularLightingEditor.cs" />
      <Compile Include="Assets\Level2\Water (Pro Only)\Water4\WaterBaseEditor.cs" />
      <Compile Include="Assets\Level2\Water (Pro Only)\Water4\WaterEditorUtility.cs" />
-     <Compile Include="Assets\Levels.cs" />
      <Compile Include="Assets\Menu Scripts\Deathstar.cs" />
      <Compile Include="Assets\Menu Scripts\GoToMainMenu.cs" />
      <Compile Include="Assets\Menu Scripts\PauseGame.cs" />
@@ -62,6 +61,9 @@
      <Compile Include="Assets\Menu Scripts\StartMenu.cs" />
      <Compile Include="Assets\Menu Scripts\UpdateTimer.cs" />
      <Compile Include="Assets\Menu Scripts\WinLevel.cs" />
+     <Compile Include="Assets\Menu\Scenes\LoadLevel1.cs" />
+     <Compile Include="Assets\Menu\Scenes\LoadLevel2.cs" />
+     <Compile Include="Assets\Menu\Scenes\LoadLevel3.cs" />
      <Compile Include="Assets\Menu\Scripts\ActiveStateToggler.cs" />
      <Compile Include="Assets\Menu\Scripts\ApplicationManager.cs" />
      <Compile Include="Assets\Menu\Scripts\ChangeColor.cs" />
