@@ -369,7 +369,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 905861940}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eff58c86f7e8c43a5a2282195372dd02, type: 3}
+  m_Script: {fileID: 11500000, guid: 52205a16934694480b0cead43837cdbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 50
@@ -713,7 +713,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1852917609}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 561b379ee22f74488b6649ddfc28f81a, type: 3}
+  m_Script: {fileID: 11500000, guid: 4ef0cc3ec70bf4b82a65563de9665cb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   standardCamera: {fileID: 1809418535}
