@@ -845,6 +845,7 @@ GameObject:
   - 224: {fileID: 713445551}
   - 222: {fileID: 713445553}
   - 114: {fileID: 713445552}
+  - 114: {fileID: 713445554}
   m_Layer: 5
   m_Name: InGameMenu
   m_TagString: Menu
@@ -900,6 +901,17 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 713445550}
+--- !u!114 &713445554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 713445550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53dc22fd253c1ea408b5479a30ee461f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &908948522
 GameObject:
   m_ObjectHideFlags: 0
@@ -986,7 +998,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
