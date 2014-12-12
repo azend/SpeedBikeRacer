@@ -74,8 +74,8 @@ function DragObject (distance : float)
 
 function FindCamera ()
 {
-	if (GetComponent.<Camera>())
-		return GetComponent.<Camera>();
+	if (camera)
+		return camera;
 	else
 		return Camera.main;
 }
