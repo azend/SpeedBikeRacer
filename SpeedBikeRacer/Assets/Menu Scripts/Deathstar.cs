@@ -14,7 +14,10 @@ public class Deathstar : MonoBehaviour {
         {
             y = -15;
             rigidbody.MovePosition(new Vector3(-20, y, -5));
-            changeAudio.audio.clip = clip;
+            changeAudio.audio.enabled = false;
+            audio.clip = clip;
+            audio.Play();
+            audio.volume = 100;
             play = false;
         }
 	}
