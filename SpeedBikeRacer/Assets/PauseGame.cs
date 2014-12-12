@@ -20,21 +20,7 @@ public class PauseGame : MonoBehaviour {
 
     void BringUpMenu()
     {
-        Object[] inGameObject;
-        GameObject enableObject;
-        int x = 0;
-
-        inGameObject = Resources.FindObjectsOfTypeAll(typeof(GameObject));
-
-        while (x < inGameObject.Length)
-        {
-            if (inGameObject[x].name == "InGameManu")
-            {
-                enableObject = (GameObject)inGameObject[x];
-                enableObject.SetActive(true);
-            }
-            x++;
-        }
+        inGameObject.SetActive(true);
         
         Time.timeScale = 0;
     }
