@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{2160287E-A45B-8A62-496E-EA0622C369A6}</ProjectGuid>
+	<ProjectGuid>{46446A62-7D30-7E11-F6CD-F6B80CE9CBD7}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -19,7 +19,7 @@
 	<DebugType>full</DebugType>
 	<Optimize>false</Optimize>
 	<OutputPath>Temp\bin\Debug\</OutputPath>
-	<DefineConstants>DEBUG;TRACE;UNITY_4_6_0;UNITY_4_6;UNITY_STANDALONE_WIN;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_4_6_FEATURES;INCLUDE_WP_BLUE_SUPPORT;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN</DefineConstants>
+	<DefineConstants>DEBUG;TRACE;UNITY_4_6_0;UNITY_4_6;UNITY_WEBPLAYER;WEBPLUG;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_4_6_FEATURES;INCLUDE_WP_BLUE_SUPPORT;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN;CROSS_PLATFORM_INPUT</DefineConstants>
 	<ErrorReport>prompt</ErrorReport>
 	<WarningLevel>4</WarningLevel>
 	<NoWarn>0169</NoWarn>
@@ -46,7 +46,16 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Deathstar.cs" />
+     <Compile Include="Assets\Dive\OpenDiveSensor.cs" />
+     <Compile Include="Assets\GoToMainMenu.cs" />
      <Compile Include="Assets\Level1\Rotator1.cs" />
+     <Compile Include="Assets\Level2\Water (Pro Only)\Water4\GerstnerDisplaceEditor.cs" />
+     <Compile Include="Assets\Level2\Water (Pro Only)\Water4\PlanarReflectionEditor.cs" />
+     <Compile Include="Assets\Level2\Water (Pro Only)\Water4\SpecularLightingEditor.cs" />
+     <Compile Include="Assets\Level2\Water (Pro Only)\Water4\WaterBaseEditor.cs" />
+     <Compile Include="Assets\Level2\Water (Pro Only)\Water4\WaterEditorUtility.cs" />
+     <Compile Include="Assets\Levels.cs" />
      <Compile Include="Assets\Menu\Scripts\ActiveStateToggler.cs" />
      <Compile Include="Assets\Menu\Scripts\ApplicationManager.cs" />
      <Compile Include="Assets\Menu\Scripts\ChangeColor.cs" />
@@ -58,6 +67,31 @@
      <Compile Include="Assets\Menu\Scripts\ScrollDetailTexture.cs" />
      <Compile Include="Assets\Menu\Scripts\ShowSliderValue.cs" />
      <Compile Include="Assets\Menu\Scripts\TiltWindow.cs" />
+     <Compile Include="Assets\OpenScrollingText\TextScroller.cs" />
+     <Compile Include="Assets\PauseGame.cs" />
+     <Compile Include="Assets\RestartLevel.cs" />
+     <Compile Include="Assets\ReturnToGame.cs" />
+     <Compile Include="Assets\SandstoneDesertRocksFree\Sample Assets\Characters\First Person Character\Scripts\FirstPersonCharacter.cs" />
+     <Compile Include="Assets\SandstoneDesertRocksFree\Sample Assets\Characters\First Person Character\Scripts\FirstPersonHeadBob.cs" />
+     <Compile Include="Assets\SandstoneDesertRocksFree\Sample Assets\Cross Platform Input\Scripts\AbstractButton.cs" />
+     <Compile Include="Assets\SandstoneDesertRocksFree\Sample Assets\Cross Platform Input\Scripts\AxisTouchButton.cs" />
+     <Compile Include="Assets\SandstoneDesertRocksFree\Sample Assets\Cross Platform Input\Scripts\Button.cs" />
+     <Compile Include="Assets\SandstoneDesertRocksFree\Sample Assets\Cross Platform Input\Scripts\ButtonDownTextureChange.cs" />
+     <Compile Include="Assets\SandstoneDesertRocksFree\Sample Assets\Cross Platform Input\Scripts\ButtonFactory.cs" />
+     <Compile Include="Assets\SandstoneDesertRocksFree\Sample Assets\Cross Platform Input\Scripts\CrossPlatformInput.cs" />
+     <Compile Include="Assets\SandstoneDesertRocksFree\Sample Assets\Cross Platform Input\Scripts\Joystick.cs" />
+     <Compile Include="Assets\SandstoneDesertRocksFree\Sample Assets\Cross Platform Input\Scripts\JoystickAbstract.cs" />
+     <Compile Include="Assets\SandstoneDesertRocksFree\Sample Assets\Cross Platform Input\Scripts\MobileControlRig.cs" />
+     <Compile Include="Assets\SandstoneDesertRocksFree\Sample Assets\Cross Platform Input\Scripts\PlatformSpecific\MobileInput.cs" />
+     <Compile Include="Assets\SandstoneDesertRocksFree\Sample Assets\Cross Platform Input\Scripts\PlatformSpecific\StandaloneInput.cs" />
+     <Compile Include="Assets\SandstoneDesertRocksFree\Sample Assets\Cross Platform Input\Scripts\TiltInput.cs" />
+     <Compile Include="Assets\SandstoneDesertRocksFree\Sample Assets\Cross Platform Input\Scripts\TouchJoystick.cs" />
+     <Compile Include="Assets\SandstoneDesertRocksFree\Sample Assets\Cross Platform Input\Scripts\TouchPad.cs" />
+     <Compile Include="Assets\SandstoneDesertRocksFree\Sample Assets\Cross Platform Input\Scripts\TouchPadPositional.cs" />
+     <Compile Include="Assets\SandstoneDesertRocksFree\Sample Assets\Cross Platform Input\Scripts\TouchPadRelativePositional.cs" />
+     <Compile Include="Assets\SandstoneDesertRocksFree\Sample Assets\Cross Platform Input\Scripts\TouchPadSwipe.cs" />
+     <Compile Include="Assets\SandstoneDesertRocksFree\Sample Assets\Cross Platform Input\Scripts\VirtualInput.cs" />
+     <Compile Include="Assets\SandstoneDesertRocksFree\Sample Assets\Utility\SimpleMouseRotator.cs" />
      <Compile Include="Assets\SilverLining\Resources\SilverLining.cs" />
      <Compile Include="Assets\SilverLining\Src\SilverLiningCirrusCloud.cs" />
      <Compile Include="Assets\SilverLining\Src\SilverLiningCumulusCloud.cs" />
@@ -74,31 +108,44 @@
      <Compile Include="Assets\SilverLining\Src\SilverLiningStratusCloud.cs" />
      <Compile Include="Assets\SilverLining\Src\SilverLiningTime.cs" />
      <Compile Include="Assets\SpeederBikeControl.cs" />
+     <Compile Include="Assets\StartMenu.cs" />
+     <Compile Include="Assets\TerrainToolkit\TerrainToolkit.cs" />
+     <Compile Include="Assets\Tree_Textures\Scripts\PlatformConfigurator.cs" />
+     <Compile Include="Assets\UpdateTimer.cs" />
      <None Include="Assets\SilverLining\Resources\SilverLiningPuff.shader" />
      <None Include="Assets\Dark Future\ReadMe.txt" />
+     <None Include="Assets\SandstoneDesertRocksFree\_info.txt" />
      <None Include="Assets\Menu\Fonts\Jupiter\LICENSE.txt" />
+     <None Include="Assets\Standard Assets\Water (Pro Only)\Water4\Sources\Shaders\FX-SimpleWater4.shader" />
      <None Include="Assets\Resources\HeightShader.shader" />
      <None Include="Assets\SilverLining\Resources\SilverLiningCirrus.shader" />
      <None Include="Assets\SilverLining\Resources\SilverLiningStratusNoFog.shader" />
      <None Include="Assets\Menu\Textures and Sprites\SF UI\Background\LICENSE.txt" />
      <None Include="Assets\SilverLining\Resources\SilverLiningSky.shader" />
      <None Include="Assets\SilverLining\readme.txt" />
+     <None Include="Assets\Standard Assets\Water (Basic)\Sources\Shaders\FX-Water Simple.shader" />
      <None Include="Assets\SilverLining\Resources\SilverLiningStratus.shader" />
+     <None Include="Assets\SandstoneDesertRocksFree\Sample Assets\Cross Platform Input\Cross Platform Input Guidelines.txt" />
      <None Include="Assets\Menu\Materials\UI-Default-No-Alpha.shader" />
+     <None Include="Assets\Standard Assets\Water (Pro Only)\Sources\Shaders\FX-Water.shader" />
      <None Include="Assets\SilverLining\Resources\SilverLiningSun.shader" />
+     <None Include="Assets\SandstoneDesertRocksFree\Sample Assets\Characters\First Person Character\First Person Character Guidelines.txt" />
+     <None Include="Assets\Standard Assets\Water (Pro Only)\Water4\Sources\Shaders\WaterInclude.cginc" />
+     <None Include="Assets\Standard Assets\Water (Pro Only)\Water4\Sources\Shaders\FX-Water4.shader" />
      <None Include="Assets\SilverLining\Resources\SilverLiningSunNoFog.shader" />
+     <None Include="Assets\TerrainToolkit\Read me.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.0/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="TritonClassLibrary">
- <HintPath>C:/Users/Mathew/Documents/Final Project Uinty/Assets/Plugins/TritonClassLibrary.dll</HintPath>
+ <HintPath>C:/Users/Mathew/Documents/GitHub/SpeedBikeRacer/SpeedBikeRacer/Assets/Plugins/TritonClassLibrary.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{841A9AFF-2BDF-8268-0828-94F40C40928F}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+      <Project>{91FCBAC7-5549-69CE-C990-A9B0D8A86FBC}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
     <ProjectReference Include="Assembly-UnityScript-firstpass.unityproj">
-      <Project>{97ABD260-C4FD-597F-17E2-1B70F582DCE4}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
+      <Project>{32955D6E-B5FF-EA58-74F6-4DBCB2F24544}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
