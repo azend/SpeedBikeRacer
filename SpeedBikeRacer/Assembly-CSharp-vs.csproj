@@ -46,9 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Deathstar.cs" />
      <Compile Include="Assets\Dive\OpenDiveSensor.cs" />
-     <Compile Include="Assets\GoToMainMenu.cs" />
      <Compile Include="Assets\Level1\Rotator1.cs" />
      <Compile Include="Assets\Level2\Water (Pro Only)\Water4\GerstnerDisplaceEditor.cs" />
      <Compile Include="Assets\Level2\Water (Pro Only)\Water4\PlanarReflectionEditor.cs" />
@@ -56,6 +54,14 @@
      <Compile Include="Assets\Level2\Water (Pro Only)\Water4\WaterBaseEditor.cs" />
      <Compile Include="Assets\Level2\Water (Pro Only)\Water4\WaterEditorUtility.cs" />
      <Compile Include="Assets\Levels.cs" />
+     <Compile Include="Assets\Menu Scripts\Deathstar.cs" />
+     <Compile Include="Assets\Menu Scripts\GoToMainMenu.cs" />
+     <Compile Include="Assets\Menu Scripts\PauseGame.cs" />
+     <Compile Include="Assets\Menu Scripts\RestartLevel.cs" />
+     <Compile Include="Assets\Menu Scripts\ReturnToGame.cs" />
+     <Compile Include="Assets\Menu Scripts\StartMenu.cs" />
+     <Compile Include="Assets\Menu Scripts\UpdateTimer.cs" />
+     <Compile Include="Assets\Menu Scripts\WinLevel.cs" />
      <Compile Include="Assets\Menu\Scripts\ActiveStateToggler.cs" />
      <Compile Include="Assets\Menu\Scripts\ApplicationManager.cs" />
      <Compile Include="Assets\Menu\Scripts\ChangeColor.cs" />
@@ -68,9 +74,6 @@
      <Compile Include="Assets\Menu\Scripts\ShowSliderValue.cs" />
      <Compile Include="Assets\Menu\Scripts\TiltWindow.cs" />
      <Compile Include="Assets\OpenScrollingText\TextScroller.cs" />
-     <Compile Include="Assets\PauseGame.cs" />
-     <Compile Include="Assets\RestartLevel.cs" />
-     <Compile Include="Assets\ReturnToGame.cs" />
      <Compile Include="Assets\SandstoneDesertRocksFree\Sample Assets\Characters\First Person Character\Scripts\FirstPersonCharacter.cs" />
      <Compile Include="Assets\SandstoneDesertRocksFree\Sample Assets\Characters\First Person Character\Scripts\FirstPersonHeadBob.cs" />
      <Compile Include="Assets\SandstoneDesertRocksFree\Sample Assets\Cross Platform Input\Scripts\AbstractButton.cs" />
@@ -108,11 +111,8 @@
      <Compile Include="Assets\SilverLining\Src\SilverLiningStratusCloud.cs" />
      <Compile Include="Assets\SilverLining\Src\SilverLiningTime.cs" />
      <Compile Include="Assets\SpeederBikeControl.cs" />
-     <Compile Include="Assets\StartMenu.cs" />
      <Compile Include="Assets\TerrainToolkit\TerrainToolkit.cs" />
      <Compile Include="Assets\Tree_Textures\Scripts\PlatformConfigurator.cs" />
-     <Compile Include="Assets\UpdateTimer.cs" />
-     <Compile Include="Assets\WinLevel.cs" />
      <None Include="Assets\SilverLining\Resources\SilverLiningPuff.shader" />
      <None Include="Assets\Dark Future\ReadMe.txt" />
      <None Include="Assets\SandstoneDesertRocksFree\_info.txt" />
