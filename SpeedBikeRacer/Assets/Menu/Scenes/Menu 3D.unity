@@ -1100,7 +1100,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400006, guid: 7a6d853690ad99c4da7a2948ec169464, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 100
+      value: -20
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 7a6d853690ad99c4da7a2948ec169464, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1141,6 +1141,10 @@ Prefab:
     - target: {fileID: 400006, guid: 7a6d853690ad99c4da7a2948ec169464, type: 3}
       propertyPath: m_LocalScale.z
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 7a6d853690ad99c4da7a2948ec169464, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7a6d853690ad99c4da7a2948ec169464, type: 3}
@@ -3348,6 +3352,8 @@ GameObject:
   - 222: {fileID: 557638311}
   - 114: {fileID: 557638310}
   - 82: {fileID: 557638314}
+  - 81: {fileID: 557638315}
+  - 114: {fileID: 557638316}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -3475,7 +3481,7 @@ AudioSource:
   Priority: 255
   DopplerLevel: 5
   MinDistance: 1
-  MaxDistance: 2000
+  MaxDistance: 20000
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -3516,6 +3522,25 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!81 &557638315
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 557638307}
+  m_Enabled: 1
+--- !u!114 &557638316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 557638307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e7c10e97c1e5a469160d00b6b2d810, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deathstar: {fileID: 2026847511}
 --- !u!1 &563121407
 GameObject:
   m_ObjectHideFlags: 0
@@ -15146,13 +15171,14 @@ GameObject:
   - 95: {fileID: 2026847513}
   - 54: {fileID: 2026847515}
   - 114: {fileID: 2026847514}
+  - 81: {fileID: 2026847516}
   m_Layer: 0
   m_Name: DeathStar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2026847512
 Transform:
   m_ObjectHideFlags: 0
@@ -15160,7 +15186,7 @@ Transform:
   m_PrefabInternal: {fileID: 172520845}
   m_GameObject: {fileID: 2026847511}
   m_LocalRotation: {x: 0, y: .866025448, z: 0, w: .49999997}
-  m_LocalPosition: {x: 100, y: -15, z: -5}
+  m_LocalPosition: {x: -20, y: -15, z: -5}
   m_LocalScale: {x: 20, y: 20, z: 20}
   m_Children:
   - {fileID: 1940628414}
@@ -15197,6 +15223,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68bf8972521dc994e9631ca4d607174e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  play: 1
+  changeAudio: {fileID: 557638307}
+  clip: {fileID: 8300000, guid: c78ffda8882537947aa4d31eaaec47ad, type: 3}
 --- !u!54 &2026847515
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15212,6 +15241,13 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!81 &2026847516
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2026847511}
+  m_Enabled: 1
 --- !u!1 &2046215900
 GameObject:
   m_ObjectHideFlags: 0

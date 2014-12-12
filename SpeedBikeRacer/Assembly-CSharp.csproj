@@ -46,6 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\ActivateDeathStar.cs" />
      <Compile Include="Assets\Dive\OpenDiveSensor.cs" />
      <Compile Include="Assets\Level1\Rotator1.cs" />
      <Compile Include="Assets\Level2\Water (Pro Only)\Water4\GerstnerDisplaceEditor.cs" />
